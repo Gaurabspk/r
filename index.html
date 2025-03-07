@@ -14,7 +14,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .game-container {
@@ -24,6 +24,8 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
+      width: 90%;
+      max-width: 800px;
     }
 
     .grid-container {
@@ -92,6 +94,44 @@
 
     footer a:hover {
       text-decoration: underline;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .game-container {
+        padding: 10px;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr; /* Stack grids vertically */
+      }
+
+      .cell {
+        width: 40px; /* Smaller cells for mobile */
+        height: 40px;
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 24px; /* Smaller header */
+      }
+
+      h3 {
+        font-size: 18px; /* Smaller player labels */
+      }
+
+      button {
+        font-size: 14px; /* Smaller buttons */
+        padding: 8px 16px;
+      }
+
+      .winner {
+        font-size: 20px; /* Smaller winner message */
+      }
+
+      footer {
+        font-size: 12px; /* Smaller footer */
+      }
     }
   </style>
 </head>
