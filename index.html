@@ -26,7 +26,6 @@
       margin-bottom: 20px;
       width: 90%;
       max-width: 800px;
-      overflow-x: auto; /* Allow horizontal scrolling on small screens */
     }
 
     .grid-container {
@@ -111,9 +110,9 @@
       }
 
       .cell {
-        width: 30px; /* Smaller cells for mobile */
-        height: 30px;
-        font-size: 18px;
+        width: 40px; /* Larger cells for mobile */
+        height: 40px;
+        font-size: 20px;
       }
 
       h1 {
@@ -140,9 +139,9 @@
 
     @media (max-width: 480px) {
       .cell {
-        width: 25px; /* Even smaller cells for very small screens */
-        height: 25px;
-        font-size: 14px;
+        width: 35px; /* Slightly smaller cells for very small screens */
+        height: 35px;
+        font-size: 18px;
       }
 
       h1 {
